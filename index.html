@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husna ✨ | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-avatar">
+                <img src="image/una.jpg.jpeg" alt="Husna">
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- PARTICLES BACKGROUND -->
+    <div class="particles" id="particles"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <div class="logo-circle">
+                    <span>H</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#home" class="nav-item active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span class="nav-tooltip">Home</span>
+            </a>
+            <a href="#about" class="nav-item" data-section="about">
+                <i class="fas fa-user"></i>
+                <span class="nav-tooltip">About</span>
+            </a>
+            <a href="#skills" class="nav-item" data-section="skills">
+                <i class="fas fa-code"></i>
+                <span class="nav-tooltip">Skills</span>
+            </a>
+            <a href="#experience" class="nav-item" data-section="experience">
+                <i class="fas fa-briefcase"></i>
+                <span class="nav-tooltip">Experience</span>
+            </a>
+            <a href="#projects" class="nav-item" data-section="projects">
+                <i class="fas fa-folder"></i>
+                <span class="nav-tooltip">Projects</span>
+            </a>
+            <a href="#contact" class="nav-item" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span class="nav-tooltip">Contact</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-bottom">
+            <div class="social-vertical">
+                <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:as.husna06@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section reveal">
+            <div class="hero-wrapper">
+                <div class="hero-avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring-2"></div>
+                    <div class="hero-avatar">
+                        <img src="image/una.jpg.jpeg" alt="Husna">
+                        <div class="avatar-shine"></div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Available for work</span>
+                    </div>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Husna</span><span class="cursor-blink">|</span></h1>
+                    <h2 class="hero-subtitle">I'm a <span class="role-text">Frontend Developer</span></h2>
+                    <p class="hero-desc">I create beautiful, responsive web experiences using modern technologies. Passionate about clean code and user-centered design.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('projects')">
+                            <i class="fas fa-eye"></i> View My Work
+                        </button>
+                        <button class="btn-secondary" onclick="downloadCV()">
+                            <i class="fas fa-download"></i> Download CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down" onclick="scrollToSection('about')">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section reveal">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who Am I?</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="image/una.jpg.jpeg" alt="Husna">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <h3 class="about-name">Asmaul Husna</h3>
+                    <p class="about-role">Frontend Developer</p>
+                    <p class="about-desc">
+                        Aku frontend developer yang suka bikin tampilan website yang clean, modern, dan enak dipakai. 
+                        Buatku, website bukan cuma soal tampilannya bagus, tapi juga soal kenyamanan user saat berinteraksi. 
+                        Karena itu, aku fokus di detail UI/UX dan animasi supaya pengalaman yang diberikan terasa lebih hidup dan berkesan.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fas fa-bolt"></i> Next.js</span>
+                        <span class="tech-tag"><i class="fas fa-wind"></i> Tailwind</span>
+                        <span class="tech-tag"><i class="fas fa-palette"></i> UI/UX</span>
+                        <span class="tech-tag"><i class="fab fa-figma"></i> Figma</span>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="2">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="15">0</h3>
+                            <p>Projects Done</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="100">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+<section id="skills" class="section reveal">
+    <div class="section-header">
+        <span class="section-tag">My Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+    </div>
+    
+    <div class="skills-content">
+        <div class="skills-info-full">
+            <h3 class="skills-heading">My Skills</h3>
+            <p class="skills-desc">I'm a passionate web developer with over 3 years of experience creating modern, responsive web applications. I specialize in frontend development using cutting-edge technologies to deliver exceptional user experiences.</p>
+            
+            <div class="skills-bars">
+                <!-- React -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon react-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">React</span>
+                                <span class="skill-subtitle">Frontend Library</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon js-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">JavaScript</span>
+                                <span class="skill-subtitle">Programming Language</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">92%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="92"></div>
+                    </div>
+                </div>
+                
+                <!-- HTML & CSS -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon html-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">HTML & CSS</span>
+                                <span class="skill-subtitle">Web Fundamentals</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">95%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <!-- Tailwind CSS -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon tailwind-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">Tailwind CSS</span>
+                                <span class="skill-subtitle">Utility-First Framework</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">88%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="88"></div>
+                    </div>
+                </div>
+                
+                <!-- Vue -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon vue-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">Vue.js</span>
+                                <span class="skill-subtitle">Progressive Framework</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">85%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                
+                <!-- Node.js -->
+                <div class="skill-row">
+                    <div class="skill-header">
+                        <div class="skill-left">
+                            <div class="skill-icon node-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-name">
+                                <span class="skill-title">Node.js</span>
+                                <span class="skill-subtitle">Backend Runtime</span>
+                            </div>
+                        </div>
+                        <span class="skill-value">80%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section reveal">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>Frontend Developer</h3>
+                        <p>Freelance projects & personal portfolio development</p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>UI/UX Designer</h3>
+                        <p>Mastered Figma, Tailwind CSS, and responsive design principles</p>
+                        <div class="timeline-tags">
+                            <span>Figma</span>
+                            <span>UI Design</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2023</span>
+                        <h3>Computer Science</h3>
+                        <p>Studied software engineering, web development, and design</p>
+                        <div class="timeline-tags">
+                            <span>Programming</span>
+                            <span>Algorithms</span>
+                            <span>Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">My Recent Projects</h2>
+            </div>
+            
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/desacare.jpeg" alt="DesaCare">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://asnaaa-glitch.github.io/desacare/" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://asnaaa-glitch.github.io/desacare/" target="_blank" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DesaCare</h3>
+                        <p>Platform digital pelaporan masalah desa & transparansi dana.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/netflix.jpeg" alt="Netflix Clone">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://asnaaa-glitch.github.io/-netflix/" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/asnaaa-glitch/-netflix" target="_blank" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Netflix Clone</h3>
+                        <p>Clone UI Netflix dengan tampilan modern & responsive.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/ftbroadcast.jpeg" alt="Broadcast Manual">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://asnaaa-glitch.github.io/broadcastnew/" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://asnaaa-glitch.github.io/broadcastnew/" target="_blank" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Broadcast Manual</h3>
+                        <p>Dashboard management system untuk broadcast WhatsApp.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/random-project.jpeg" alt="Knowledge Explorer">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://asnaaa-glitch.github.io/random/" target="_blank" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/asnaaa-glitch/random" target="_blank" class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Knowledge Explorer</h3>
+                        <p>Website interaktif untuk menjelajahi fakta menarik dengan quiz system.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<!-- GITHUB STATS SECTION -->
+<section id="github" class="section reveal">
+    <div class="section-header">
+        <span class="section-tag">GitHub</span>
+        <h2 class="section-title">My Coding Activity</h2>
+    </div>
+    
+    <div class="github-content">
+        <div class="github-stats-grid">
+            <!-- Stats Cards -->
+            <div class="github-stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Repositories</p>
+                </div>
+            </div>
+            
+            <div class="github-stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="120">0</h3>
+                    <p>Stars Earned</p>
+                </div>
+            </div>
+            
+            <div class="github-stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="15000">0</h3>
+                    <p>Lines of Code</p>
+                </div>
+            </div>
+            
+            <div class="github-stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="85">0</h3>
+                    <p>Followers</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top Repositories -->
+        <div class="github-repos">
+            <h3 class="repos-title"><i class="fas fa-folder-open"></i> Top Repositories</h3>
+            
+            <div class="repos-grid">
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <h4 class="repo-name">DesaCare</h4>
+                        <div class="repo-lang" style="color: #f1e05a;">
+                            <span class="lang-dot"></span> JavaScript
+                        </div>
+                    </div>
+                    <p class="repo-desc">Platform digital pelaporan masalah desa & transparansi dana.</p>
+                    <div class="repo-stats">
+                        <span><i class="fas fa-star"></i> 24</span>
+                        <span><i class="fas fa-code-branch"></i> 8</span>
+                        <span><i class="fas fa-eye"></i> 156</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/desacare" target="_blank" class="repo-btn">
+                            <i class="fab fa-github"></i> View Repo
+                        </a>
+                        <a href="https://asnaaa-glitch.github.io/desacare/" target="_blank" class="repo-btn primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <h4 class="repo-name">Netflix Clone</h4>
+                        <div class="repo-lang" style="color: #e34c26;">
+                            <span class="lang-dot"></span> HTML/CSS
+                        </div>
+                    </div>
+                    <p class="repo-desc">Clone UI Netflix dengan tampilan modern & responsive.</p>
+                    <div class="repo-stats">
+                        <span><i class="fas fa-star"></i> 18</span>
+                        <span><i class="fas fa-code-branch"></i> 5</span>
+                        <span><i class="fas fa-eye"></i> 132</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/netflix" target="_blank" class="repo-btn">
+                            <i class="fab fa-github"></i> View Repo
+                        </a>
+                        <a href="https://asnaaa-glitch.github.io/-netflix/" target="_blank" class="repo-btn primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <h4 class="repo-name">Knowledge Explorer</h4>
+                        <div class="repo-lang" style="color: #f1e05a;">
+                            <span class="lang-dot"></span> JavaScript
+                        </div>
+                    </div>
+                    <p class="repo-desc">Website interaktif untuk menjelajahi fakta menarik dengan quiz system.</p>
+                    <div class="repo-stats">
+                        <span><i class="fas fa-star"></i> 32</span>
+                        <span><i class="fas fa-code-branch"></i> 12</span>
+                        <span><i class="fas fa-eye"></i> 201</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://github.com/yourusername/random" target="_blank" class="repo-btn">
+                            <i class="fab fa-github"></i> View Repo
+                        </a>
+                        <a href="https://asnaaa-glitch.github.io/random/" target="_blank" class="repo-btn primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- GitHub Profile Link -->
+        <div class="github-cta">
+            <a href="https://github.com/yourusername" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i>
+                <span>Follow me on GitHub</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- TOOLS & TECHNOLOGIES SECTION -->
+<section id="tools" class="section reveal">
+    <div class="section-header">
+        <span class="section-tag">Tools & Technologies</span>
+        <h2 class="section-title">What I Use</h2>
+    </div>
+    
+    <div class="tools-content">
+        <div class="tools-category">
+            <h3 class="tools-category-title"><i class="fas fa-laptop-code"></i> Development</h3>
+            <div class="tools-grid">
+                <div class="tool-item" data-tooltip="Visual Studio Code">
+                    <i class="fas fa-code"></i>
+                    <span>VS Code</span>
+                </div>
+                <div class="tool-item" data-tooltip="Git">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tool-item" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="tool-item" data-tooltip="npm">
+                    <i class="fab fa-npm"></i>
+                    <span>npm</span>
+                </div>
+                <div class="tool-item" data-tooltip="Vercel">
+                    <i class="fas fa-triangle"></i>
+                    <span>Vercel</span>
+                </div>
+                <div class="tool-item" data-tooltip="Chrome DevTools">
+                    <i class="fab fa-chrome"></i>
+                    <span>DevTools</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tools-category">
+            <h3 class="tools-category-title"><i class="fas fa-paint-brush"></i> Design</h3>
+            <div class="tools-grid">
+                <div class="tool-item" data-tooltip="Figma">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="tool-item" data-tooltip="Adobe XD">
+                    <i class="fas fa-bezier-curve"></i>
+                    <span>Adobe XD</span>
+                </div>
+                <div class="tool-item" data-tooltip="Canva">
+                    <i class="fas fa-palette"></i>
+                    <span>Canva</span>
+                </div>
+                <div class="tool-item" data-tooltip="Photoshop">
+                    <i class="fas fa-image"></i>
+                    <span>Photoshop</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tools-category">
+            <h3 class="tools-category-title"><i class="fas fa-tasks"></i> Productivity</h3>
+            <div class="tools-grid">
+                <div class="tool-item" data-tooltip="Notion">
+                    <i class="fas fa-book"></i>
+                    <span>Notion</span>
+                </div>
+                <div class="tool-item" data-tooltip="Trello">
+                    <i class="fab fa-trello"></i>
+                    <span>Trello</span>
+                </div>
+                <div class="tool-item" data-tooltip="Slack">
+                    <i class="fab fa-slack"></i>
+                    <span>Slack</span>
+                </div>
+                <div class="tool-item" data-tooltip="Discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="section reveal">
+    <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What People Say</h2>
+    </div>
+    
+    <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Ahmad Rizki</h4>
+                    <p class="testimonial-role">CEO, TechStart Indonesia</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Husna sangat profesional dalam mengerjakan website kami. Hasilnya clean, modern, dan responsif. Sangat recommended untuk proyek web development!"</p>
+            <div class="testimonial-date">March 2024</div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Siti Nurhaliza</h4>
+                    <p class="testimonial-role">Product Manager, Digital Agency</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Kerja sama yang sangat menyenangkan! Husna sangat detail dalam UI/UX dan selalu deliver on time. Akan bekerja sama lagi di proyek berikutnya."</p>
+            <div class="testimonial-date">February 2024</div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Budi Santoso</h4>
+                    <p class="testimonial-role">Founder, E-Commerce Store</p>
+                </div>
+            </div>
+            <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"Website e-commerce yang dibuat Husna sangat user-friendly. Penjualan kami meningkat 40% setelah redesign. Terima kasih Husna!"</p>
+            <div class="testimonial-date">January 2024</div>
+        </div>
+    </div>
+</section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section reveal">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:as.husna06@gmail.com">as.husna06@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject">
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2024 Husna. Made with <i class="fas fa-heart"></i> in Indonesia</p>
+        </footer>
+    </main>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
